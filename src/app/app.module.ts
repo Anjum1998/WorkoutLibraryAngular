@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { ViewBookComponent } from './view-book/view-book.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -16,6 +17,10 @@ const myRoute:Routes=[
   {
     path:"entry",
     component:BookEntryComponent
+  },
+  {
+    path:"view",
+    component:ViewBookComponent
   }
 ]
 @NgModule({
@@ -23,7 +28,8 @@ const myRoute:Routes=[
     AppComponent,
     AdminLoginComponent,
     BookEntryComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewBookComponent
   ],
   imports: [
     BrowserModule,
