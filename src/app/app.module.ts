@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BookEntryComponent } from './book-entry/book-entry.component';
+import { NavbarComponent } from './navbar/navbar.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -20,7 +21,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    BookEntryComponent
+    BookEntryComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
